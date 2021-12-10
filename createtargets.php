@@ -12,7 +12,7 @@ class signInUp extends database
     function insertTarget()
     {
         //validation file is included here
-        include('/validation.php');         // Validation in PHP is the process where we check if the input information in the various fields in any form such as text or checkbox ect.
+        include('./validation.php');         // Validation in PHP is the process where we check if the input information in the various fields in any form such as text or checkbox ect.
 
         if (isset($_POST['signup'])) {
             //This test_input function is coming from validation.php
