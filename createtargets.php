@@ -9,7 +9,7 @@ class signInUp extends database
     protected $link;
 
     //This function will insert data to database
-    function signUpFunction()
+    function insertTarget()
     {
         //validation file is included here
         include('./validation.php');         // Validation in PHP is the process where we check if the input information in the various fields in any form such as text or checkbox ect.
@@ -36,7 +36,7 @@ class signInUp extends database
 //Here obj is created
 $obj = new signInUp;
 //Here signUpFunction is called from the class
-$objSignUp = $obj->signUpFunction();
+$objSignUp = $obj->insertTarget();
 
 ?>
 
