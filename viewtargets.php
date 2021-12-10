@@ -9,6 +9,7 @@ class signInUp extends database
     {
         $sql = "SELECT * from targets";
         $res = mysqli_query($this->link, $sql);
+        echo $res;
         if (mysqli_num_rows($res) > 0) {
             return $res;
         } else {
@@ -63,7 +64,7 @@ $objSignUp = $obj->signUpFunction();
 
                 <!-- <form action="" method="post"> -->
                 <div class="">
-                    <h4 class="font-weight-bold pt-5 text-center">View Mission</h4>
+                    <h4 class="font-weight-bold pt-5 text-center">View Targets</h4>
                     <table id="example" class="table table-striped table-bordered">
                         <thead>
                             <tr>

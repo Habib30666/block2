@@ -69,7 +69,7 @@ $objSignUp = $obj->signUpFunction();
                             <tr>
                                 <th>Name</th>
                                 <th>Destination</th>
-                                <th>Lunch Date</th>
+                                <th>Launch Date</th>
                                 <th>Type</th>
                                 <th>Crew Size</th>
 
