@@ -21,7 +21,7 @@ class signInUp extends database
             $type = test_input($_POST['type']);
             $no_missions = test_input($_POST['no_missions']);
             echo "I am here";
-            // echo $first_mission;
+            echo $first_mission;
 
             //Insert data to database
             $sql = "INSERT INTO `targets` (`id`, `name`,`first_mission`, `type`,`no_missions`) VALUES (NULL, '$name','$first_mission', '$type','$no_missions')";
