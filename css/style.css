@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+/* changes the seizing of padding*/
+section {
+    padding: 60px 0;
+}
+/* provides a different type of font*/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+/* resizes the width*/
+img {
+    width: 100%;
+}
+
+.navbar-brand {
+    width: 7%;  /* resizes the navbar */ 
+}
+
+
+.nav-item {   /* changes navbar font*/
+    font-family: 'Lato', sans-serif;
+}
+
+.back_img p {
+    font-family: 'Lato', sans-serif;
+    color: #481639; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #5e055e;
+    transition: 0.7s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #189AB4;
+}
+
+.back_nav {
+    background-color: #05445E;
+    border-radius: 5px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+
+
+
+/* The colour of the indicators */
+
