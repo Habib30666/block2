@@ -1,9 +1,5 @@
 
-<?php
-session_start(); // creates a session or resumes the current one based on a session identifier passed via a GET or POST request
-error_reporting(0);
 
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +8,7 @@ error_reporting(0);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php require('/layout/style.php'); ?>
+    <?php include('/layout/style.php'); ?>
 
 
     <style>
@@ -41,7 +37,7 @@ error_reporting(0);
 </head>
 
 <body class="bg-light">
-    <?php include('./layout/navbar.php'); ?>
+    <?php include('/layout/navbar.php'); ?>
 
 
 
@@ -58,7 +54,7 @@ error_reporting(0);
 	<a href="viewMission.php">View Missions</a>
 
 
-    <?php include('./layout/script.php') ?>
+    <?php include('/layout/script.php') ?>
 
 
 </body>
