@@ -41,7 +41,7 @@ error_reporting(0);
 </head>
 
 <body class="bg-light">
-    <?php include('layout/navbar.php'); ?>
+    <?php include('./layout/navbar.php'); ?>
 
 
 
@@ -58,7 +58,7 @@ error_reporting(0);
 	<a href="viewMission.php">View Missions</a>
 
 
-    <?php include('layout/script.php') ?>
+    <?php include('./layout/script.php') ?>
 
 
 </body>
