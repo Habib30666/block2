@@ -1,25 +1,5 @@
 <?php
 session_start();  // creates a session or resumes the current one based on a session identifier passed via a GET or POST request
-
-include('class/config.php');
-class signInUp extends database
-// {
-//     protected $link;
-//     public function signUpFunction()
-//     {
-//         $sql = "SELECT * from astronaut";
-//         $res = mysqli_query($this->link, $sql);
-//         if (mysqli_num_rows($res) > 0) {
-//             return $res;
-//         } else {
-//             return false;
-//         }
-      
-//     }
-// }
-// $obj = new signInUp;
-// $objSignUp = $obj->signUpFunction();
-
 ?>
 
 <!DOCTYPE html>
