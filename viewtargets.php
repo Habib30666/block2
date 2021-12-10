@@ -5,11 +5,10 @@ include('class/config.php'); // connects file
 class signInUp extends database
 {
     protected $link;
-    public function signUpFunction()
+    public function getTargets()
     {
         $sql = "SELECT * from targets";
         $res = mysqli_query($this->link, $sql);
-        echo $res;
         if (mysqli_num_rows($res) > 0) {
             return $res;
         } else {
@@ -19,7 +18,7 @@ class signInUp extends database
     }
 }
 $obj = new signInUp;
-$objSignUp = $obj->signUpFunction();
+$objSignUp = $obj->getTargets();
 
 ?>
 
