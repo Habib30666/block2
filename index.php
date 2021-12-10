@@ -55,45 +55,7 @@ $objSignUp = $obj->signUpFunction();
 <body class="bg-light">
     <?php include('layout/navbar.php'); ?>
 
-    <section>
-        <div class="container bg-white pr-4 pl-4  log_section pb-5">
-
-            <div class="">
-
-
-                <!-- <form action="" method="post"> -->
-                <div class="">
-                    <h4 class="font-weight-bold pt-5 text-center">View Astronaut</h4>
-                    <table id="example" class="table table-striped table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Number Mission</th>
-
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if ($objSignUp) { ?>
-                            <?php while ($row = mysqli_fetch_assoc($objSignUp)) { ?> <!-- while loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true -->
-                            <tr>
-                                <th><?php echo $row['name'] ?></th>
-                                <th><?php echo $row['no_missions']; ?></th>
-
-                            </tr>
-                            <?php } ?>
-                            <?php } ?>
-                        </tbody>
-
-
-
-                    </table>
-                </div>
-                <!-- </form> -->
-            </div>
-
-        </div>
-
-    </section>
+    
 
 
     <?php include('layout/footer.php'); ?>
