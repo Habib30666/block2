@@ -9,7 +9,7 @@ class signInUp extends database
     protected $link;
 
     //This function will insert data to database
-    public function signUpFunction()
+    function signUpFunction()
     {
         //validation file is included here
         include('./validation.php');         // Validation in PHP is the process where we check if the input information in the various fields in any form such as text or checkbox ect.

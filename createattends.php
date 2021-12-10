@@ -5,7 +5,7 @@ include('class/config.php');
 class signInUp extends database
 {
     protected $link;
-    public function signUpFunction()
+    function signUpFunction()
     {
         include('./validation.php');  // Validation in PHP is the process where we check if the input information in the various fields in any form such as text or checkbox ect.
 
