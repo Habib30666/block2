@@ -1,37 +1,37 @@
 <?php
-session_start();  // creates a session or resumes the current one based on a session identifier passed via a GET or POST request
+// session_start();  // creates a session or resumes the current one based on a session identifier passed via a GET or POST request
 //config file is included here
 include('class/config.php');
 
 //This signInUp class extend database class from config.php
-class signInUp extends database
-{
-    protected $link;
+// class signInUp extends database
+
+    // protected $link;
     //validation file is included here
-    include('./validation.php');         // Validation in PHP is the process where we check if the input information in the various fields in any form such as text or checkbox ect.
+include('./validation.php');         // Validation in PHP is the process where we check if the input information in the various fields in any form such as text or checkbox ect.
 
-    if (isset($_POST['signup'])) {
-        //This test_input function is coming from validation.php
-        $first_mission = test_input($_POST['first_mission']);
-        $name = test_input($_POST['name']);
-        $type = test_input($_POST['type']);
-        $no_missions = test_input($_POST['no_missions']);
-        echo "I am here";
-        echo $first_mission;
+if (isset($_POST['signup'])) {
+    //This test_input function is coming from validation.php
+    $first_mission = test_input($_POST['first_mission']);
+    $name = test_input($_POST['name']);
+    $type = test_input($_POST['type']);
+    $no_missions = test_input($_POST['no_missions']);
+    echo "I am here";
+    echo $first_mission;
 
-        //Insert data to database
-        $sql = "INSERT INTO `targets` (`id`, `name`,`first_mission`, `type`,`no_missions`) VALUES (NULL, '$name','$first_mission', '$type','$no_missions')";
-        $res = mysqli_query($this->link, $sql);
-        if ($res) {
-            //If successfully inserted then it will return below msg
-            return 'Successfully Created';
-        } else {
-            return false;
-        }
+    //Insert data to database
+    $sql = "INSERT INTO `targets` (`id`, `name`,`first_mission`, `type`,`no_missions`) VALUES (NULL, '$name','$first_mission', '$type','$no_missions')";
+    $res = mysqli_query($this->link, $sql);
+    if ($res) {
+        //If successfully inserted then it will return below msg
+        return 'Successfully Created';
+    } else {
+        return false;
     }
+}
         
     
-}
+
 //Here obj is created
 // $obj = new signInUp;
 // //Here signUpFunction is called from the class
