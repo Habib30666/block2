@@ -5,7 +5,7 @@ include('class/config.php'); // connects file
 class signInUp extends database
 {
     protected $link;
-    public function getTargets()
+    function getTargets()
     {
         $sql = "SELECT * from targets";
         $res = mysqli_query($this->link, $sql);

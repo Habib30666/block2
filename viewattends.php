@@ -5,7 +5,7 @@ include('class/config.php');
 class signInUp extends database
 {
     protected $link;
-    public function signUpFunction()
+    function signUpFunction()
     {    //SQL is used to communicate with a database. 
         $sql = "SELECT * from attends";   //  The SELECT statement is used to select data from a database. The data returned is stored in a result table, called the result-set.
         $res = mysqli_query($this->link, $sql);

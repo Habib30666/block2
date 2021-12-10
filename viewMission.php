@@ -5,7 +5,7 @@ include('class/config.php'); // connects file to the database
 class signInUp extends database
 {
     protected $link;
-    public function signUpFunction()
+    function signUpFunction()
     {
         $sql = "SELECT * from mission";  // The SELECT statement is used to select data from a database. The data returned is stored in a result table
         $res = mysqli_query($this->link, $sql);

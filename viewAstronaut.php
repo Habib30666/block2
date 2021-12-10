@@ -5,7 +5,7 @@ include('class/config.php');
 class signInUp extends database
 {
     protected $link;
-    public function signUpFunction()
+    function signUpFunction()
     {
         $sql = "SELECT * from astronaut";
         $res = mysqli_query($this->link, $sql);
