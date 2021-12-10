@@ -8,18 +8,10 @@ error_reporting(0);
 <html lang="en">
 
 <head>
-<link rel="stylesheet" href="/css/fontawesme.min.css">
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/parsley.css">
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/animate.css">
-<link rel="stylesheet" href="/css/Chart.css">
-<link rel="stylesheet" href="/css/datepicker.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php include('layout/style.php'); ?>
+    <?php include('/layout/style.php'); ?>
 
 
     <style>
