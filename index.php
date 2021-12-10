@@ -3,22 +3,22 @@ session_start();  // creates a session or resumes the current one based on a ses
 
 include('class/config.php');
 class signInUp extends database
-{
-    protected $link;
-    public function signUpFunction()
-    {
-        $sql = "SELECT * from astronaut";
-        $res = mysqli_query($this->link, $sql);
-        if (mysqli_num_rows($res) > 0) {
-            return $res;
-        } else {
-            return false;
-        }
+// {
+//     protected $link;
+//     public function signUpFunction()
+//     {
+//         $sql = "SELECT * from astronaut";
+//         $res = mysqli_query($this->link, $sql);
+//         if (mysqli_num_rows($res) > 0) {
+//             return $res;
+//         } else {
+//             return false;
+//         }
       
-    }
-}
-$obj = new signInUp;
-$objSignUp = $obj->signUpFunction();
+//     }
+// }
+// $obj = new signInUp;
+// $objSignUp = $obj->signUpFunction();
 
 ?>
 
