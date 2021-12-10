@@ -22,7 +22,6 @@ class signInUp extends database
                 return false;
             }
         }
-
     }
 }
 $obj = new signInUp;
